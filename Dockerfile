@@ -1,6 +1,6 @@
 FROM node
 
-RUN sudo dpkg --add-architecture i386 && sudo add-apt-repository ppa:wine/wine-builds && sudo apt-get update && sudo apt-get install -y --install-recommends winehq-devel
+RUN dpkg --add-architecture i386 && add-apt-repository ppa:wine/wine-builds && apt-get update && apt-get install -y --install-recommends winehq-devel
 
 RUN npm install electron-packager -g
 
