@@ -2,7 +2,7 @@ FROM node
 
 RUN npm install electron-packager -g
 
-VOLUMN /electron
+VOLUME /electron
 WORKDIR /electron
 
 CMD['electron-packager']
