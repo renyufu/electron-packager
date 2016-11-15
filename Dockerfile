@@ -1,8 +1,10 @@
 FROM node
 
-RUN apt-get update && apt-get install wine -y
+RUN dpkg --add-architecture i386 && apt-get update && apt-get install wine32 -y
 
 RUN npm install electron-packager -g
+
+VOLUME /root/.electron
 
 VOLUME /electron
 WORKDIR /electron
