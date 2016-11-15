@@ -9,4 +9,4 @@ VOLUME /root/.electron
 VOLUME /electron
 WORKDIR /electron
 
-CMD ['/usr/local/bin/electron-packager']
+ENTRYPOINT electron-packager
