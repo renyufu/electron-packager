@@ -9,4 +9,6 @@ VOLUME /root/.electron
 VOLUME /electron
 WORKDIR /electron
 
-ENTRYPOINT electron-packager
+CMD [""]
+
+ENTRYPOINT ["electron-packager"]
